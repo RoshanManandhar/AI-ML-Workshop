@@ -118,3 +118,87 @@ student = {
 
 print("Student Dictionary")
 print(student)
+
+# Accessing values
+print("\nStudent name:", student['name'])
+print("Student scores:", student['scores'])
+print("Mean score:", sum(student['scores']) / len(student['scores']))
+
+#Adding/updating values
+student = {
+    "name": "Alice",
+    "age": 20,
+    "department": "Computer Science"
+}
+
+# Add a new key-value pair
+student["college"] = "ABC College"
+
+# Update an existing value
+student["age"] = 21
+
+print(student)
+
+student = {
+    "name": "Roshan",
+    "age": 20,
+    "faculty": "BCA",
+    "semester": 3,
+    "college": "SS College",
+    "is_active": True
+}
+
+print("Student Dictionary")
+print(student)
+
+# Add new values
+student["address"] = "Kathmandu"
+student["hobby"] = "Football"
+
+# Update existing values
+student["age"] = 21
+student["semester"] = 5
+
+print("\nUpdated Dictionary:")
+print(student)
+
+student = {
+    "name": "Alice",
+    "scores": [45, 80, 67, 90, 30]
+}
+
+alice_scores = student['scores']
+
+alice_passing_scores = [score for score in alice_scores if score >= 80]
+
+print("\nPassing scores (>=80):", alice_passing_scores)
+
+#conditional statements
+
+def get_grade(score):
+    if score >= 90:
+        return "A"
+    elif score >= 80:
+        return "B"
+    elif score >= 70:
+        return "C"
+    elif score >= 60:
+        return "D"
+    else:
+        return "F"
+
+
+# Taking input from user
+score = int(input("Enter your score: "))
+
+# Getting grade
+grade = get_grade(score)
+
+# Display result
+print("Your grade is:", grade)
+
+#Test the function
+test_scores = [85, 90, 76, 45]
+for score in test_scores:
+    grade = get_grade(score)
+    print("Score:", score, "Grade:", grade)
