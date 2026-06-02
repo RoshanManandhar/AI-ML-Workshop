@@ -105,6 +105,9 @@
 # scores_with_implicates = [15, 32, 65, 75, 60, 70]
 # unique_scores = list(set(scores_with_implicates))
 
+from decimal import __version__
+
+
 print("\n --- Dictionaries ---")
 print("="*50)
 
@@ -202,3 +205,11 @@ test_scores = [85, 90, 76, 45]
 for score in test_scores:
     grade = get_grade(score)
     print("Score:", score, "Grade:", grade)
+
+    #Insert all libraries will need
+    import pandas as pd
+    import numpy as np
+
+    print("All packages imported successfully!")
+    print("Pandas version:", pd.__version__)
+    print("Numpy version:", np.__version__)
