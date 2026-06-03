@@ -18,10 +18,10 @@
       "No": 0,
       "Yes": 1
     },
-      "parent_education": {
+    "parent_education": {
       "High School": 0,
-      "Bachelor's": 1,
-      "Master's": 2,
+      "Bachelor": 1,
+      "Master": 2,
       "PhD": 3
     }
   }
